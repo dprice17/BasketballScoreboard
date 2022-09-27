@@ -1,8 +1,101 @@
+* {box-sizing: border-box;}
+
+
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1D42BA;
 }
 
 .container {
+    width: 300px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
+
+
+/******************************-/
+            Typography
+/******************************/
+
+.teams{
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.point-btn{
+   font-family: Cursed Timer ULiL; 
+}
+
+
+
+/******************************-/
+            Layout
+/******************************/
+
+
+#score1,
+#score2{
+   width: 117px;
+   height: 120px;
+   background: #080001;
+   color: #C8102E;
+   font-family: Cursed Timer ULiL;
+   font-weight: bold;
+   font-size: 2em;
+   text-align: center;
+   padding-top: 1.2em;
+   border: 2px solid #fff; 
+}
+
+
+
+/******************************-/
+            Buttons
+/******************************/
+
+
+.restart{
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    padding: 0.5em 1.5em;
+    max-width: 100%;
+    min-width: 150px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.point-btn,
+.restart{
+    background: none;
+    color: #9AABD8;
+    border-color: #BEC0C2 ;
+    cursor: pointer;
+    font-weight: bold;
+}
+    
+.point-btn:hover,
+.restart:hover,
+.point-btn:focus,
+.restart:focus
+{
+    background: #C8102E;
+    transform: scale(1.2);
+}
+
+
+
+@media (min-width: 500px){
+    .container{
+        flex-direction: row;
+    }
+}
+
+
+

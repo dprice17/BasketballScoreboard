@@ -3,13 +3,26 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        
         <div class="container">
-            <div>
-                <h3>HOME</h3>
+            <div class="score">
+                    <h3 class="teams">Pistons</h3>
+                    <p id="score1"></p> 
+                    <button class="point-btn" onclick="score1Add1()">+1</button>
+                    <button class="point-btn"  onclick="score1Add2()">+2</button>
+                    <button class="point-btn"  onclick="score1Add3()">+3</button>
             </div>
-            <div>
-                <h3>GUEST</h3>
+            
+            <div class="score">
+                    <h3 class="teams">Cavaliers</h3>
+                    <p id="score2"></p> 
+                    <button class="point-btn"  onclick="score2Add1()">+1</button>
+                    <button class="point-btn"  onclick="score2Add2()">+2</button>
+                    <button class="point-btn"  onclick="score2Add3()">+3</button>   
             </div>
+        </div>
+        <div>
+            <button class="restart" onclick="gameRestart()">New Game</button>
         </div>
         <script src="index.js"></script>
     </body>
